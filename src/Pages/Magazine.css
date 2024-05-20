@@ -1,0 +1,298 @@
+/* .magazine-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.page {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0;
+}
+
+.magazine-image {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+  
+.x{
+  text-decoration: none;
+  color: inherit;
+
+}
+
+.x:hover{
+  transform: scale(1.1);
+}
+
+
+.navigation-button {
+  background: none;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+
+
+.title-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; 
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-style: normal;
+  
+  
+}
+
+.title-overlay:hover{
+  font-size:  4em;
+  transition: 0.3s;
+}
+
+
+.page-corner {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: rgba(116, 60, 60, 0.1);
+}
+
+.page-corner.top-left {
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 20px;
+}
+
+.page-corner.top-right {
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 20px;
+}
+ */
+
+/* 
+ .magazine-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.page {
+  background: white;
+  position: relative;
+  padding: 0;
+}
+
+.magazine-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title-overlay {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bottom-left-arrow {
+  position: absolute; 
+  bottom: 10px; 
+  left: 10px; 
+  font-size: 2em;
+}
+
+.bottom-left-arrow a {
+  text-decoration: none; 
+  color: white; 
+}
+
+.bottom-left-arrow a:hover {
+  transform: scale(1.2); 
+  transition: transform 0.2s; 
+}
+ */
+
+
+ .magazine-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 30px;
+}
+.magazine-container1{
+ display: none;/* Menos margen en pantallas más pequeñas */
+}
+.magazine-container3{
+ display: none;/* Menos margen en pantallas más pequeñas */
+}
+.magazine-container2 {
+  display: none; /* Aún menos margen para dispositivos móviles */
+  }
+
+
+
+.page {
+  background: white;
+  position: relative;
+  padding: 0;
+}
+
+.magazine-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.corner {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+
+.corner.top-left {
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 20px;
+}
+
+.corner.top-right {
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 20px;
+}
+
+.x {
+  list-style: none;
+  text-decoration: none;
+  color: aliceblue;
+  transition: transform 0.3s ease;
+}
+
+.x:hover {
+  transform: scaleX(1.1);
+}
+
+ @media (min-width: 1000px) and (max-width:1200px){
+ 
+  .magazine-container2 {
+  display: none;
+  }
+  .magazine-container1 {
+  display: none;
+  }
+  .magazine-container3 {
+    display: none; /* Aún menos margen para dispositivos móviles */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 30px;
+  }
+    .magazine-container {
+    display: none; /* Aún menos margen para dispositivos móviles */
+    }
+
+  .title-overlay {
+    font-size: 2em; 
+  }
+
+  .corner {
+    width: 30px;
+    height: 30px; 
+  }
+}
+ @media (min-width: 721px) and (max-width:1000px){
+ 
+  .magazine-container2 {
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 30px;
+  }
+  .magazine-container {
+    display: none; /* Aún menos margen para dispositivos móviles */
+    }
+  .magazine-container3 {
+    display: none; /* Aún menos margen para dispositivos móviles */
+    }
+    .magazine-container1 {
+    display: none; /* Aún menos margen para dispositivos móviles */
+    }
+
+  .title-overlay {
+    font-size: 2em; 
+  }
+
+  .corner {
+    width: 30px;
+    height: 30px; 
+  }
+}
+
+ 
+
+@media (min-width: 320px) and (max-width:720px) {
+  .magazine-container {
+  display: none; /* Aún menos margen para dispositivos móviles */
+  }
+  .magazine-container2 {
+  display: none; /* Aún menos margen para dispositivos móviles */
+  }
+  .magazine-container3 {
+  display: none; /* Aún menos margen para dispositivos móviles */
+  }
+
+  .magazine-container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 30px;
+  }
+
+
+  .title-overlay {
+    font-size: 1.5em; /* Reduce más el tamaño del texto */
+  }
+
+  .corner {
+    width: 20px;
+    height: 20px; /* Aún más pequeño para esquinas */
+  }
+}

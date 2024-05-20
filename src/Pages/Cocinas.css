@@ -1,0 +1,97 @@
+
+/* Banner.css */
+.pos-cocinas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.carousele1 {
+    width: 1000px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /*  background-color: #f0f0f0; */
+  }
+  
+  .image-containere1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  
+  }
+  
+  .carousele-image1 {
+    width: 100%;
+    height: 100%;
+    object-fit: center;
+    
+  
+  }
+  
+  .text-centere1 {
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Centra correctamente */
+    text-align: center; /* Centra el texto */
+    display: flex;
+    flex-direction: column; /* Alinea el texto de forma vertical */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-titleep1 {
+    color: rgb(0, 0, 0); /* Asegúrate de que el color del texto sea visible */
+    font-size: 55px;
+
+    font-weight: bold;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+  
+  
+  .image-titleep {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+   
+    font-size: 40px;
+    color: #f1683a; /* Cambia el color del texto secundario */
+  }
+  
+  .button-containeret {
+    position: absolute;
+    top: 50%; /* Centra verticalmente para las flechas */
+    transform: translateY(-50%); /* Para alinear correctamente */
+    display: flex;
+    justify-content: space-between; /* Espacio entre botones */
+    width: 100%; /* Asegura que los botones queden en los extremos */
+  }
+  
+  .prevew, .nextew {
+   background-color: transparent !important; 
+    color: rgb(2, 2, 2);
+    border: none;
+    padding: 20px; /* Tamaño de los botones */
+    border-radius: 50%; /* Botones redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 30px;
+  }
+  
+  .prevew {
+    left: 10px; /* Posiciona el botón a la izquierda */
+  }
+  
+  .nextew {
+    right: 10px; /* Posiciona el botón a la derecha */
+  }
+  
+  .prevew:hover, .nexew:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Efecto hover */
+  }
+  

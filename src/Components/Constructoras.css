@@ -1,0 +1,19 @@
+.carouselet {
+    width: 100%;
+
+    overflow: hidden;
+     height: 350px;
+     padding: 20px 10px;
+  }
+  
+  .slide {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 30px;
+  }
+  
+  .slide img {
+    max-width: 20%;
+    height: auto;
+  }

@@ -1,0 +1,405 @@
+.scroll-snap-container {
+  position: relative;
+  height: 100vh; /* Altura de la pantalla completa */
+  overflow-y: auto; /* Permite desplazamiento vertical */
+  scroll-snap-type: y mandatory; /* Snap obligatorio en la dirección Y */
+}
+
+.fixed-background {
+  position: fixed; /* Imagen de fondo fija */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 86vh;
+  /* background-image: url('../assets/large-image.jpg'); */ /* Imagen de fondo */
+  background-size: cover; /* La imagen cubre todo el espacio */
+  background-position: center; /* Centra la imagen */
+  z-index: -1; /* Detrás del contenido */
+  margin-top: 120px;
+}
+
+.snap-content {
+  display: flex; /* Para centrar el contenido */
+  flex-direction: column; /* Para mantener el contenido vertical */
+  scroll-snap-align: start; /* Alineación de snap al inicio */
+/*   padding: 100px 20px; */ /* Espaciado para centrar el contenido */
+  align-items: center;
+}
+
+.snap-item {
+ 
+  height: 100vh; /* Cada sección tiene la altura de la pantalla */
+  display: flex; /* Centra el contenido en vertical */
+  flex-direction: column;
+  justify-content: center; /* Centra el contenido en el eje Y */
+  align-items: center; /* Centra el contenido en el eje X */
+  scroll-snap-align: start; /* Snap al inicio de cada bloque */
+  color: rgb(255, 255, 255); /* Asegura visibilidad del texto */
+  font-family: Arial, sans-serif;
+  width: 70%;
+  /* text-align: center; */
+}
+
+.snap-item h1 {
+  font-size: 46px; /* Tamaño del encabezado */
+ 
+    font-family: "Pathway Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+  
+}
+
+.snap-item p {
+  font-size: 20px; /* Tamaño del texto */
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.span-bold{
+  font-weight: bold;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@media (max-width:520px){
+  .scroll-snap-container {
+   
+    height: 70vh; /* Altura de la pantalla completa */
+   
+  }
+
+.fixed-background {
+  position: fixed; /* Imagen de fondo fija */
+  top: 0;
+  left: 0;
+ 
+  height: 70vh;
+  
+}
+.snap-content {
+  display: flex; /* Para centrar el contenido */
+  flex-direction: column; /* Para mantener el contenido vertical */
+  scroll-snap-align: start; /* Alineación de snap al inicio */
+/*   padding: 100px 20px; */ /* Espaciado para centrar el contenido */
+  align-items: center;
+}
+
+.snap-item{
+  height: 70vh;
+}
+
+
+.snap-item h1 {
+  font-size: 25px; /* Tamaño del encabezado */
+ 
+ 
+  
+  
+}
+
+
+.snap-item p {
+  font-size: 10px; /* Tamaño del texto */
+ 
+  
+}
+}
+
+@media (max-width:720px){
+  .scroll-snap-container {
+   
+    height: 70vh; /* Altura de la pantalla completa */
+   
+  }
+
+.fixed-background {
+  position: fixed; /* Imagen de fondo fija */
+  top: 0;
+  left: 0;
+ 
+  /* height: 70vh; */
+  
+}
+.snap-content {
+  display: flex; /* Para centrar el contenido */
+  flex-direction: column; /* Para mantener el contenido vertical */
+  scroll-snap-align: start; /* Alineación de snap al inicio */
+/*   padding: 100px 20px; */ /* Espaciado para centrar el contenido */
+  align-items: center;
+}
+
+.snap-item{
+  height: 60vh;
+}
+
+
+.snap-item h1 {
+  font-size: 26px; /* Tamaño del encabezado */
+ 
+ 
+  
+  
+}
+
+
+.snap-item p {
+  font-size: 20px; /* Tamaño del texto */
+ 
+  
+}
+}
+
+@media (max-width:1080px){
+  .scroll-snap-container {
+   
+    height: 70vh; /* Altura de la pantalla completa */
+   
+  }
+
+.fixed-background {
+  position: fixed; /* Imagen de fondo fija */
+  top: 0;
+  left: 0;
+ 
+  /* height: 70vh; */
+  
+}
+.snap-content {
+  display: flex; /* Para centrar el contenido */
+  flex-direction: column; /* Para mantener el contenido vertical */
+  scroll-snap-align: start; /* Alineación de snap al inicio */
+/*   padding: 100px 20px; */ /* Espaciado para centrar el contenido */
+  align-items: center;
+}
+
+.snap-item{
+  height: 60vh;
+}
+
+
+.snap-item h1 {
+  font-size: 40px; /* Tamaño del encabezado */
+ 
+ 
+  
+  
+}
+
+
+.snap-item p {
+  font-size: 25px; /* Tamaño del texto */
+ 
+  
+}
+}
+
+@media (max-width:580px){
+  .scroll-snap-container {
+   
+    height: 70vh; /* Altura de la pantalla completa */
+   
+  }
+
+.fixed-background {
+  position: fixed; /* Imagen de fondo fija */
+  top: 0;
+  left: 0;
+ 
+  /* height: 70vh; */
+  
+}
+.snap-content {
+  display: flex; /* Para centrar el contenido */
+  flex-direction: column; /* Para mantener el contenido vertical */
+  scroll-snap-align: start; /* Alineación de snap al inicio */
+/*   padding: 100px 20px; */ /* Espaciado para centrar el contenido */
+  align-items: center;
+}
+
+.snap-item{
+  height: 60vh;
+}
+
+
+.snap-item h1 {
+  font-size: 30px; /* Tamaño del encabezado */
+ 
+ 
+  
+  
+}
+
+
+.snap-item p {
+  font-size: 18px; /* Tamaño del texto */
+ 
+  
+}
+}
+@media (max-width:480px){
+  .scroll-snap-container {
+   
+    height: 70vh; /* Altura de la pantalla completa */
+   
+  }
+
+.fixed-background {
+  position: fixed; /* Imagen de fondo fija */
+  top: 0;
+  left: 0;
+ 
+  height: 70vh; 
+  
+}
+.snap-content {
+  display: flex; /* Para centrar el contenido */
+  flex-direction: column; /* Para mantener el contenido vertical */
+  scroll-snap-align: start; /* Alineación de snap al inicio */
+/*   padding: 100px 20px; */ /* Espaciado para centrar el contenido */
+  align-items: center;
+}
+
+.snap-item{
+  height: 60vh;
+}
+
+
+.snap-item h1 {
+  font-size: 20px; /* Tamaño del encabezado */
+ 
+ 
+  
+  
+}
+
+
+.snap-item p {
+  font-size: 14px; /* Tamaño del texto */
+ 
+  
+}
+}
+
+/* 
+.caro{
+    width: 100%;
+    height: 87vh;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+  */
+/* }
+.image-containep {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+} */
+
+/* .position{
+    background-color: #edf2f4 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    }
+
+    .nosotros-container {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      width: 80vw;
+      height: 700px;
+      }
+    
+    
+      .boton{
+        background-color: #b3b4c2;
+        border-radius: 10px;
+        font-size: 20px;
+        color: #f1f1f1;
+          list-style: none;
+          text-decoration: none;
+          font-family: 'Permanent Marker', cursive;
+         
+          
+    
+      } */
+      /* button:hover{
+        background-color: #da1515;
+      }
+       */
+      
+      /* .imagen-container {
+        
+        margin-right: 20px;
+        position: relative; 
+        background-color: aqua;
+        
+      } */
+ /*    
+      .img2{
+        width: 50%;
+        height: 500px;
+      }
+      
+      .texto-container {
+        
+        width: 50%;
+        
+        
+      }
+      
+      .texto-container p {
+        font-size: 20px;
+        line-height: 1.5;
+        padding-left: 30px;
+      }
+      
+      
+      .boton{
+        margin-left: 100px;
+        margin-top: 50px;
+        height: 60px;
+        width: 100px;
+      }
+       */
+      
+      /* .linea{
+        width: 2px;
+        background-color: #2b2d42;
+        height: 80%;
+        
+      }
+      
+      .linea2{
+        width: 100%;
+        background-color: #2b2d42;
+        height:  2px;
+        
+      } */
+      
+      /* 
+      .imagen-container::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 30px;
+        
+         background-color:  #b45d3a
+      } */
+      
+     /*  .imagen-container img {
+        max-width: 100%;
+        height: auto;
+        background-color: #42d43d; 
+      } */
