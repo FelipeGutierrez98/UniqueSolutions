@@ -209,7 +209,7 @@ button:hover {
   }
   
 
-  @media (min-width:820px){
+  @media screen and (min-width:321px) and (max-width:1000px){
 
 .carousele {
   width: 100%;
@@ -299,51 +299,62 @@ font-style: italic;
 }
   }
   
+@media screen and (max-width:700px) {
+  .carousele {
+    width: 100%;
+    height: 56vh!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /*  background-color: #f0f0f0; */
+  }
+}
 
 
 
-  @media (min-width:520px){
+/*   @media screen and(min-width:520px){
     
     .carousele {
       width: 100%;
     
-      height: 66vh;
-      /* display: flex; */
-    /*   justify-content: center;
+      height: 80vh;
+       display: flex; 
+     justify-content: center;
       align-items: center;
-      align-items: center; */
-     /*  background-color: #f0f0f0; */
+     
     }
     
-   /*  .image-containere {
-      position: relative;
+    .image-containere {
+      position: relative; 
       width: 100%;
       height: 100%;
       overflow: hidden;
-    }  */
+    }  
     
     .carousele-image {
       width: 100%;
-      height: 100%;
+      height: 70%;
       object-fit: cover;
       
       
     }
     
     .text-centere {
-      position: absolute;
-      top: 50%; /* Centra verticalmente */
-      left: 50%; /* Centra horizontalmente */
-      transform: translate(-50%, -50%); /* Centra correctamente */
-      text-align: center; /* Centra el texto */
+       position: absolute;
+      top: 50%; 
+      left: 50%; 
+      transform: translate(-50%, -50%); 
+        
       display: flex;
-      flex-direction: column; /* Alinea el texto de forma vertical */
+      flex-direction: column; 
       justify-content: center;
-      align-items: center;
+
+
+      
     }
     
     .image-titlee {
-      color: rgb(0, 0, 0); /* Asegúrate de que el color del texto sea visible */
+      color: rgb(0, 0, 0);
       font-size: 35px;
     
       font-weight: bold;
@@ -360,39 +371,39 @@ font-style: italic;
       font-style: normal;
      
       font-size: 25px;
-      color: #f1683a; /* Cambia el color del texto secundario */
+      color: #f1683a; 
     }
     
     .button-containere {
       position: absolute;
-      top: 50%; /* Centra verticalmente para las flechas */
-      transform: translateY(-50%); /* Para alinear correctamente */
+      top: 50%; 
+      transform: translateY(-50%); 
       display: flex;
-      justify-content: space-between; /* Espacio entre botones */
-      width: 100%; /* Asegura que los botones queden en los extremos */
+      justify-content: space-between; 
+      width: 100%; 
     }
     
     .preve, .nexte {
      background-color: transparent !important; 
       color: rgb(2, 2, 2);
       border: none;
-      padding: 10px; /* Tamaño de los botones */
-      border-radius: 50%; /* Botones redondeados */
+      padding: 10px; 
+      border-radius: 50%; 
       cursor: pointer;
       transition: background-color 0.3s;
       font-size: 30px;
     }
     
     .preve {
-      left: 5px; /* Posiciona el botón a la izquierda */
+      left: 5px; 
     }
     
     .nexte {
-      right: 5px; /* Posiciona el botón a la derecha */
+      right: 5px; 
     }
     
     .preve:hover, .nexet:hover {
-      background-color: rgba(0, 0, 0, 0.7); /* Efecto hover */
+      background-color: rgba(0, 0, 0, 0.7); 
     }
       }
-      
+       */
