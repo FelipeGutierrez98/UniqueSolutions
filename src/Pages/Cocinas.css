@@ -32,18 +32,18 @@
   
   .text-centere1 {
     position: absolute;
-    top: 50%; /* Centra verticalmente */
-    left: 50%; /* Centra horizontalmente */
-    transform: translate(-50%, -50%); /* Centra correctamente */
-    text-align: center; /* Centra el texto */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
     display: flex;
-    flex-direction: column; /* Alinea el texto de forma vertical */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
   }
   
   .image-titleep1 {
-    color: rgb(0, 0, 0); /* Asegúrate de que el color del texto sea visible */
+    color: rgb(0, 0, 0); 
     font-size: 55px;
 
     font-weight: bold;
@@ -60,38 +60,38 @@
     font-style: normal;
    
     font-size: 40px;
-    color: #f1683a; /* Cambia el color del texto secundario */
+    color: #f1683a; 
   }
   
   .button-containeret {
     position: absolute;
-    top: 50%; /* Centra verticalmente para las flechas */
-    transform: translateY(-50%); /* Para alinear correctamente */
+    top: 50%; 
+    transform: translateY(-50%); 
     display: flex;
-    justify-content: space-between; /* Espacio entre botones */
-    width: 100%; /* Asegura que los botones queden en los extremos */
+    justify-content: space-between; 
+    width: 100%; 
   }
   
   .prevew, .nextew {
    background-color: transparent !important; 
     color: rgb(2, 2, 2);
     border: none;
-    padding: 20px; /* Tamaño de los botones */
-    border-radius: 50%; /* Botones redondeados */
+    padding: 20px; 
+    border-radius: 50%; 
     cursor: pointer;
     transition: background-color 0.3s;
     font-size: 30px;
   }
   
   .prevew {
-    left: 10px; /* Posiciona el botón a la izquierda */
+    left: 10px; 
   }
   
   .nextew {
-    right: 10px; /* Posiciona el botón a la derecha */
+    right: 10px; 
   }
   
   .prevew:hover, .nexew:hover {
-    background-color: rgba(0, 0, 0, 0.7); /* Efecto hover */
+    background-color: rgba(0, 0, 0, 0.7); 
   }
   

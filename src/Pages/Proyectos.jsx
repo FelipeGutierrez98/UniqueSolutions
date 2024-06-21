@@ -13,14 +13,7 @@ function Proyectos() {
   return (
     <div>
 
-     {/*  <div className='caro'>
-
-        <div className="image-containep">
-          <img className='imagen' src={proyectos} alt='logo' />
-          <h1 className="image-title w">PROYECTOS</h1>
-
-        </div>
-      </div> */}
+     
 
 
       <div className='position'>
@@ -225,7 +218,7 @@ function Proyectos() {
             <div className='face front'>
               <img className='img2' src={kornLogo} alt="" />
               <h3>
-                Edificio La Primera - Kandelaria
+                La Primera - Kandelaria
               </h3>
             </div>
             <div className='face back'>

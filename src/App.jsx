@@ -58,8 +58,7 @@ const App = () => {
 
 
     </Routes>
-   {/* 
-   {/*   <Button> click me</Button> */}
+ 
    <Footer/>
     </Router>
     </div>

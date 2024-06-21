@@ -1,29 +1,3 @@
-/* header{
-  width: 1140px;
-  max-width: 80%;
-  margin: auto;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  position:relative;
-  z-index: 100;
-
-  
-}
-header a{
-  margin-right: 40px;
-}
-header img{
-  margin-right: 40px;
-  height: 100px;
-}
-Link{
-  font-weight: 400;
-  font-style: normal;
-  text-decoration: none !important;
-  font-family: "Black Ops One", system-ui;
-} */
-/* Header.css */
 
 header {
   width: 100%;
@@ -56,15 +30,16 @@ header {
 }
 
 .linkUnidad {
-  margin-right: 100px; /* Espaciado entre enlaces */
-  text-decoration: none; /* Elimina el subrayado */
-  color: rgb(0, 0, 0); /* Establece el color del texto a negro */
-  transition: color 0.3s; /* Añade una transición para cambios de color */
+  margin-right: 86px; 
+  text-decoration: none; 
+  color: rgb(0, 0, 0); 
+  transition: color 0.3s; 
   transform: scale(1.1);
-  font-size: 25px;
+  font-size: 26px;
   text-align: center;
   padding-top: 10px;
-    font-family: "Pathway Gothic One", sans-serif;
+  font-family: "Pathway Gothic One", sans-serif;
+   
     font-weight: 400;
     font-style: normal;
   
@@ -73,7 +48,7 @@ header {
 
 
 .linkUnidad:hover {
-  color: rgb(74, 68, 68); /* Cambia el color cuando se pasa el ratón */
+  color: rgb(74, 68, 68); 
 }
 
 .linkUnidad:before {
@@ -92,67 +67,16 @@ header {
   transform: scaleX(1);
 }
 
-/* .navBar{
-  display: flex;
-  background-color: transparent;
-  align-items: center;
-  width: 100%;
-  justify-content: space-around; 
-  font-family: 'Permanent Marker', cursive;
-  list-style: none;
-  background-color: #ffffff;
-} */
-/*  .links{
-  width: 70%;
-  display: flex;
-  color: #1f376c;
-  align-items: center;
-  
-  font-size: 25px;
-  
-}
 
-.logo{
-  height: 100px;
-  
-} */
 
-.animated-button {
-  background-color: transparent; /* Color de fondo */
-    color: rgb(6, 6, 6); /* Color del texto */
-    padding: 10px 20px; /* Espaciado */
-    border: none; /* Sin bordes */
-    border-radius: 5px; /* Bordes redondeados */
-    font-size: 16px; /* Tamaño del texto */
-    cursor: pointer; /* Aparecerá la mano al pasar */
-    transition: all 0.3s ease; /* Animación suave para cambios */
-    text-decoration: none;
-    border: 1px solid black;
-  }
-  
-  /* Efectos al pasar el mouse */
-  .animated-button:hover {
-    color: white;
-    background-color: rgb(0, 0, 0);
-    transform: scale(1.1); /* Aumenta el tamaño */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
-  }
-  
-  /* Efectos al presionar el botón */
-  .animated-button:active {
-    transform: scale(1.05); /* Disminuye el tamaño para efecto de clic */
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); /* Menor sombra al hacer clic */
-    background-color: #ffffff; /* Cambia el color de fondo */
-    color: rgb(0, 0, 0);
-  }
-  
+
   
   
   @media (max-width: 1200px) {
     .header {
-      /* Reduce la altura del header */
+      
       display: flex;
-      justify-content: space-between; /* Mantiene el espacio entre elementos */
+      justify-content: space-between; 
     }
     .logo {
       height: 100px;
@@ -160,14 +84,13 @@ header {
     }
     
     .linkUnidad {
-      margin-right: 60px; /* Espaciado entre enlaces */
-      text-decoration: none; /* Elimina el subrayado */
-      color: rgb(0, 0, 0); /* Establece el color del texto a negro */
-      transition: color 0.3s; /* Añade una transición para cambios de color */
+      margin-right: 65px; 
+      text-decoration: none; 
+      color: rgb(0, 0, 0); 
+      transition: color 0.3s; 
       transform: scale(1.1);
-      font-size: 25px;
-      text-align: center
-      ;
+      font-size: 26px;
+      text-align: center;
       
       font-family: "Pathway Gothic One", sans-serif;
       font-weight: 400;
@@ -178,19 +101,19 @@ header {
   }
   @media (max-width: 720px) {
     .header {
-      /* Reduce la altura del header */
+      
       display: flex;
-      justify-content: space-between; /* Mantiene el espacio entre elementos */
+      justify-content: space-between; 
     }
     .logo {
       height: 100px;
       margin-right: 40px;
     }
     .linkUnidad {
-      margin-right: 40px; /* Espaciado entre enlaces */
-      text-decoration: none; /* Elimina el subrayado */
-      color: rgb(0, 0, 0); /* Establece el color del texto a negro */
-      transition: color 0.3s; /* Añade una transición para cambios de color */
+      margin-right: 40px; 
+      text-decoration: none; 
+      color: rgb(0, 0, 0); 
+      transition: color 0.3s; 
       transform: scale(1.1);
       font-size: 25px;
       
@@ -209,10 +132,10 @@ header {
     }
     
     .linkUnidad {
-    margin-right: 100px; /* Espaciado entre enlaces */
-    text-decoration: none; /* Elimina el subrayado */
-    color: rgb(0, 0, 0); /* Establece el color del texto a negro */
-    transition: color 0.3s; /* Añade una transición para cambios de color */
+    margin-right: 100px; 
+    text-decoration: none; 
+    color: rgb(0, 0, 0); 
+    transition: color 0.3s; 
     transform: scale(1.1);
     font-size: 27px!important;
     text-align: center;
@@ -243,18 +166,18 @@ header {
     }
     
     .linkUnidad {
-    margin-right: 100px; /* Espaciado entre enlaces */
-    text-decoration: none; /* Elimina el subrayado */
-    color: rgb(0, 0, 0); /* Establece el color del texto a negro */
-    transition: color 0.3s; /* Añade una transición para cambios de color */
+    margin-right: 30px; 
+    text-decoration: none; 
+    color: rgb(0, 0, 0); 
+    transition: color 0.3s; 
     transform: scale(1.1);
-    font-size: 30px!important;
+    font-size: 27px!important;
     text-align: center;
     padding-top: 20px;
-      font-family: "Pathway Gothic One", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      margin:0 auto;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
     
     }
     .basic-navbar-nav1{
@@ -279,10 +202,10 @@ header {
     }
     
     .linkUnidad {
-    margin-right: 100px; /* Espaciado entre enlaces */
-    text-decoration: none; /* Elimina el subrayado */
-    color: rgb(0, 0, 0); /* Establece el color del texto a negro */
-    transition: color 0.3s; /* Añade una transición para cambios de color */
+    margin-right: 100px; 
+    text-decoration: none; 
+    color: rgb(0, 0, 0); 
+    transition: color 0.3s; 
     transform: scale(1.1);
     font-size: 18px!important;
     padding-top: 20px;

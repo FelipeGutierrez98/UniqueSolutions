@@ -1,77 +1,188 @@
-
-
 import { Link } from 'react-router-dom';
 import React, { useRef } from 'react';
 import PageFlip from 'react-pageflip';
-import Cocina1 from '../assets/Copia de COCINA-01A.jpg';
-import Cocina2 from '../assets/Copia de COCINA-02 2.jpeg';
-import Cocina3 from '../assets/Copia de COCINA-03 2.jpg';
-import Cocina4 from '../assets/Copia de COCINA-04-1.jpg';
-import Cocina5 from '../assets/COCINA-05.jpg';
-import Cocina6 from '../assets/Copia de COCINA-06.jpg';
-import Cocina7 from '../assets/Copia de COCINA-07.jpg';
-import Cocina7a from '../assets/COCINA-07A.jpg';
-import Cocina8 from '../assets/COCINA-08.jpg';
-import Baño from '../assets/Baño.webp';
-import Cocina from '../assets/COCINA-01.jpg';
-import Banner1 from '../assets/banner.webp';
-
-
+import repisa from '../assets/REPISA-01.jpg';
+import repisa2 from '../assets/REPISA-02.jpeg';
+import Banca from '../assets/BANCA MADERA-02.jpg';
+import Biblioteca from '../assets/BIBLIOTECA-01.jpg';
+import Estudio from '../assets/ESTUDIO-01.jpg';
 
 
 
 import './Magazine.css';
+const MagazinePage = React.forwardRef(({ images, title, link }, ref) => {
+  const isFirstOtros = images.length > 0 && images[0] === repisa2;
+  const isSecondImagecM2 = images.length > 0 && images[0] === repisa2; 
+  const isSecondImagecM1 = images.length > 0 && images[0] === repisa; 
+  const isSecondImagecM3 = images.length > 0 && images[0] === Banca; 
+  const isSecondImagecM4 = images.length > 0 && images[0] === Biblioteca; 
+  const isSecondImagecM5 = images.length > 0 && images[0] === Estudio; 
+  
+  //Responsive mobile 
 
-import closet1 from '../assets/CLOSET-01.jpg';
-import closet2 from '../assets/CLOSET-02.jpg';
-import closet3 from '../assets/CLOSET-03.jpeg';
-import closet5 from '../assets/CLOSET-05.jpg';
-import closet6 from '../assets/CLOSET-06.jpg';
+  const isSecondImagecM1M = images.length > 0 && images[0] === repisa; 
+  const isSecondImagecM3M = images.length > 0 && images[0] === Banca; 
+  const isSecondImagecM4M = images.length > 0 && images[0] === Biblioteca; 
+  const isSecondImagecM5M = images.length > 0 && images[0] === Estudio; 
+  return (
+    <div className="page" ref={ref}>
+      {images.map((src, index) => (
+        <img
+          key={index}
+          src={src}
+          alt={`Page ${index + 1}`}
+          className="magazine-image"
+        />
+      ))}
+      {title && (
+        <div className="title-overlay">
+          {link ? <Link className="x" to={link}>{title}</Link> : title}
+        </div>
+      )}
+      <div className="corner top-left" />
+      <div className="corner top-right" />
+      {isFirstOtros && (
+        <Link to="/Productos" className="arrow-link">
+          <i className="fas fa-arrow-left indicator1"></i>
+        </Link>
+      )}
+      {isFirstOtros&& (
+        <Link to="/Productos" className="arrow-link">
+          <i className="fas fa-arrow-left indicator3"></i>
+        </Link>
+      )}
+      {isSecondImagecM1M&& ( 
+        <i className="fas fa-arrow-left indicator3 " ></i>
+      )}
+      {isSecondImagecM3M&& ( 
+        <i className="fas fa-arrow-left indicator3 " ></i>
+      )}
+      {isSecondImagecM4M&& ( 
+        <i className="fas fa-arrow-left indicator3 " ></i>
+      )}
+      {isSecondImagecM5M&& ( 
+        <i className="fas fa-arrow-left indicator3 " ></i>
+      )}
+      
+      {isSecondImagecM2 && ( 
+        <i className="fas fa-arrow-right indicator2  " onClick={() => pageFlip.current.flipNext()}></i>
+      )}
+      {isSecondImagecM1 && ( 
+        <i className="fas fa-arrow-right indicator " onClick={() => pageFlip.current.flipNext()}></i>
+      )}
+      {isSecondImagecM1 && ( 
+        <i className="fas fa-arrow-right indicator2 " onClick={() => pageFlip.current.flipNext()}></i>
+      )}
+     
+      {isSecondImagecM3 && ( 
 
-const MagazinePage = React.forwardRef(({ images, title, link, arrowLink }, ref) => (
-  <div className="page" ref={ref}>
-    {images.map((src, index) => (
-      <img key={index} src={src} alt={`Page ${index + 1}`} className="magazine-image" />
-    ))}
+        <i className="fas fa-arrow-left indicator1" onClick={() => pageFlip.current.flipNext()}></i>
+      )}
+      {isSecondImagecM3 && ( 
 
-    {title && (
-      <div className="title-overlay">
-        {link ? <Link className='x' to={link}>{title}</Link> : title}
-      </div>
-    )}
+        <i className="fas fa-arrow-right indicator2" onClick={() => pageFlip.current.flipNext()}></i>
+      )}
+      {isSecondImagecM4 && ( 
 
-    {arrowLink && (
-      <div className="bottom-left-arrow">
-        <Link to={arrowLink}>Productos &#9660;</Link> 
-      </div>
-    )}
- 
-    <div className="corner top-left" />
-    <div className= "corner top-right" />
-  </div>
-));
+        <i className="fas fa-arrow-right indicator" onClick={() => pageFlip.current.flipNext()}></i>
+      )}
+    
+      {isSecondImagecM5 && ( 
 
-const MueblesBaño = () => {
+        <i className="fas fa-arrow-left indicator1 " onClick={() => pageFlip.current.flipNext()}></i>
+      )}
+      {isSecondImagecM5 && ( 
+
+        <i className="fas fa-arrow-left indicator3 " onClick={() => pageFlip.current.flipNext()}></i>
+      )}
+
+    </div>
+  );
+});
+
+const MueblesLava = () => {
   const pageFlip = useRef(null);
 
+  const handleNext = () => {
+    if (pageFlip.current) {
+      pageFlip.current.flipNext();
+    }
+  };
+
+  const handlePrev = () => {
+    if (pageFlip.current) {
+      pageFlip.current.flipPrev();
+    }
+  };
+ 
+
   return (
-    <div className="magazine-container">
-      <PageFlip ref={pageFlip} width={600} height={700}>
-        <MagazinePage images={[Cocina]} title="Muebles de Lavado" link="/cocinas" arrowLink="/productos" />
-        <MagazinePage images={[Cocina1]} />
-        <MagazinePage images={[Cocina2]} />
-        <MagazinePage images={[Cocina3]} />
-        <MagazinePage images={[Cocina4]} />
-        <MagazinePage images={[Cocina5]} />
-        <MagazinePage images={[Cocina6]} />
-        <MagazinePage images={[Cocina7]} />
-        <MagazinePage images={[Cocina7a]} />
-        <MagazinePage images={[Cocina8]} />
-      </PageFlip>
+    <div>
+
+      <div className="magazine-container">
+        <PageFlip ref={pageFlip} width={700} height={700} className='PageFlip' >
+          <MagazinePage images={[repisa2]} title="" link="/cocinas" arrowLink="/productos" />
+          <MagazinePage images={[repisa]} />
+          <MagazinePage images={[Banca]} />
+          <MagazinePage images={[Biblioteca]} />
+          <MagazinePage images={[Estudio]} />
+          
+        </PageFlip>
+      </div>
+
+      <div className="magazine-container1">
+        <PageFlip ref={pageFlip} width={450} height={450} >
+        <MagazinePage images={[repisa2]} title="" link="/cocinas" arrowLink="/productos" />
+          <MagazinePage images={[repisa]} />
+          <MagazinePage images={[Banca]} />
+          <MagazinePage images={[Biblioteca]} />
+          <MagazinePage images={[Estudio]} />
+          
+        </PageFlip>
+      </div>
+      <div className="magazine-container2">
+        <PageFlip ref={pageFlip} width={700} height={600} >
+        <MagazinePage images={[repisa2]} title="" link="/cocinas" arrowLink="/productos" />
+          <MagazinePage images={[repisa]} />
+          <MagazinePage images={[Banca]} />
+          <MagazinePage images={[Biblioteca]} />
+          <MagazinePage images={[Estudio]} />
+          
+        </PageFlip>
+      </div>
+      <div className="magazine-container3">
+        <PageFlip ref={pageFlip} width={900} height={600} >
+        <MagazinePage images={[repisa2]} title="" link="/cocinas" arrowLink="/productos" />
+          <MagazinePage images={[repisa]} />
+          <MagazinePage images={[Banca]} />
+          <MagazinePage images={[Biblioteca]} />
+          <MagazinePage images={[Estudio]} />
+          
+        </PageFlip>
+      </div>
+      <div className="magazine-container4">
+        <PageFlip ref={pageFlip} width={550} height={600} >
+        <MagazinePage images={[repisa2]} title="" link="/cocinas" arrowLink="/productos" />
+          <MagazinePage images={[repisa]} />
+          <MagazinePage images={[Banca]} />
+          <MagazinePage images={[Biblioteca]} />
+          <MagazinePage images={[Estudio]} />
+          
+        </PageFlip>
+      </div>
+      <div className="magazine-container5">
+        <PageFlip ref={pageFlip} width={350} height={500} >
+        <MagazinePage images={[repisa2]} title="Cocinas" link="/cocinas" arrowLink="/productos" />
+          <MagazinePage images={[repisa]} />
+          <MagazinePage images={[Banca]} />
+          <MagazinePage images={[Biblioteca]} />
+          <MagazinePage images={[Estudio]} />
+          
+        </PageFlip>
+      </div>
     </div>
   );
 };
 
-export default MueblesBaño;
- 
 
+export default MueblesLava;

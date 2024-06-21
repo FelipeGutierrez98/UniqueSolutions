@@ -1,123 +1,3 @@
-/* .carousele {
-    width: 100%;
-    height: 86vh;
-  
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-   
-}
-
-.image-containe {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.image-containe img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-
-}
-
-.image-title {
-    position: absolute;
-    bottom: 20px;
-
-   right: 30%;
-    transform: translateX(-50%);
-    color: rgb(255, 255, 255);
-    font-size: 55px;
-    text-align: center;
-    z-index: 1;
-    margin-bottom: 13%;
-     font-family: "Pinyon Script", cursive; 
-
-    font-weight: 400;
-    font-style: normal;
-    font-weight: bold;
-    letter-spacing: 10px;
-    font-size: 5em;
-    font-weight: bold;
-    line-height: 1.3em;
-}
-
-.image-title2 {
-    position: absolute;
-    bottom: 20px;
-   
-    right: 28%;
-    transform: translateX(-50%);
-    color: rgb(0, 0, 0);
-    font-size: 55px;
-    text-align: center;
-    z-index: 1;
-    margin-bottom: 10%;
-    font-family: "Black Ops One", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    font-weight: bold;
-    letter-spacing: 10px;
-    color: #f1683a;
-}
-
-.button-container1 {
-    position: absolute;
-    bottom: 20px;
-  
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-
-}
-
-button {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #eee4;
-    border: none;
-    color: #fff;
-    font-family: monospace;
-    font-weight: bold;
-    transition: .5s;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    
-}
-.button:hover{
-    background-color: #fff;
-    color: #000;
-}
-
-.prev1,
-.next1 {
-    margin: 0 10px;
-
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-weight: 500;
-    border: none;
-    border-radius: 50%;
- 
-}
-
-button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-} */
-
-
 
 
 /* Banner.css */
@@ -127,7 +7,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-   /*  background-color: #f0f0f0; */
+  
   }
   
   .image-containere {
@@ -145,67 +25,67 @@ button:hover {
   
   .text-centere {
     position: absolute;
-    top: 50%; /* Centra verticalmente */
-    left: 50%; /* Centra horizontalmente */
-    transform: translate(-50%, -50%); /* Centra correctamente */
-    text-align: center; /* Centra el texto */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
     display: flex;
-    flex-direction: column; /* Alinea el texto de forma vertical */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
   }
   
   .image-titlee {
-    color: rgb(236, 231, 231)!important; /* Asegúrate de que el color del texto sea visible */
+    color: rgb(236, 231, 231)!important; 
     font-size: 55px;
 
     font-weight: bold;
-  font-family: "Libre Baskerville", serif;
+    font-family: "Madurai W01 Ext Black";
   font-weight: 400;
   font-style: italic;
 }
   
   
   .image-titlee2 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Breul Grotesk B Light"; 
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
    
     font-size: 40px;
-    color:#bbd3e2!important;; /* Cambia el color del texto secundario */
+    color:#d8d7d7!important;
   }
   
   .button-containere {
     position: absolute;
-    top: 50%; /* Centra verticalmente para las flechas */
-    transform: translateY(-50%); /* Para alinear correctamente */
+    top: 50%; 
+    transform: translateY(-50%); 
     display: flex;
-    justify-content: space-between; /* Espacio entre botones */
-    width: 100%; /* Asegura que los botones queden en los extremos */
+    justify-content: space-between; 
+    width: 100%; 
   }
   
   .preve, .nexte {
    background-color: transparent !important; 
-    color: rgb(2, 2, 2);
+    color: rgb(255, 255, 255);
     border: none;
-    padding: 20px; /* Tamaño de los botones */
-    border-radius: 50%; /* Botones redondeados */
+    padding: 20px; 
+    border-radius: 50%; 
     cursor: pointer;
     transition: background-color 0.3s;
     font-size: 30px;
   }
   
   .preve {
-    left: 10px; /* Posiciona el botón a la izquierda */
+    left: 10px; 
   }
   
   .nexte {
-    right: 10px; /* Posiciona el botón a la derecha */
+    right: 10px; 
   }
   
   .preve:hover, .nexet:hover {
-    background-color: rgba(0, 0, 0, 0.7); /* Efecto hover */
+    background-color: rgba(0, 0, 0, 0.7); 
   }
   
 
@@ -217,7 +97,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
- /*  background-color: #f0f0f0; */
+ 
 }
 
 .image-containere {
@@ -235,22 +115,22 @@ button:hover {
 
 .text-centere {
   position: absolute;
-  top: 50%; /* Centra verticalmente */
-  left: 50%; /* Centra horizontalmente */
-  transform: translate(-50%, -50%); /* Centra correctamente */
-  text-align: center; /* Centra el texto */
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  text-align: center; 
   display: flex;
-  flex-direction: column; /* Alinea el texto de forma vertical */
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
 }
 
 .image-titlee {
-  color: rgb(0, 0, 0); /* Asegúrate de que el color del texto sea visible */
-  font-size: 45px;
+  color: rgb(236, 231, 231); 
+  font-size: 55px;
 
   font-weight: bold;
-font-family: "Libre Baskerville", serif;
+  font-family: "Madurai W01 Ext Black";
 font-weight: 400;
 font-style: italic;
 }
@@ -263,39 +143,39 @@ font-style: italic;
   font-style: normal;
  
   font-size: 35px;
-  color: #f1683a; /* Cambia el color del texto secundario */
+  color: #f1683a; 
 }
 
 .button-containere {
   position: absolute;
-  top: 50%; /* Centra verticalmente para las flechas */
-  transform: translateY(-50%); /* Para alinear correctamente */
+  top: 50%; 
+  transform: translateY(-50%); 
   display: flex;
-  justify-content: space-between; /* Espacio entre botones */
-  width: 100%; /* Asegura que los botones queden en los extremos */
+  justify-content: space-between; 
+  width: 100%; 
 }
 
 .preve, .nexte {
  background-color: transparent !important; 
-  color: rgb(2, 2, 2);
+  color: rgb(255, 255, 255);
   border: none;
-  padding: 20px; /* Tamaño de los botones */
-  border-radius: 50%; /* Botones redondeados */
+  padding: 20px; 
+  border-radius: 50%; 
   cursor: pointer;
   transition: background-color 0.3s;
   font-size: 30px;
 }
 
 .preve {
-  left: 10px; /* Posiciona el botón a la izquierda */
+  left: 10px; 
 }
 
 .nexte {
-  right: 10px; /* Posiciona el botón a la derecha */
+  right: 10px; 
 }
 
 .preve:hover, .nexet:hover {
-  background-color: rgba(0, 0, 0, 0.7); /* Efecto hover */
+  background-color: rgba(0, 0, 0, 0.7); 
 }
   }
   
@@ -306,104 +186,27 @@ font-style: italic;
     display: flex;
     justify-content: center;
     align-items: center;
-   /*  background-color: #f0f0f0; */
+  
   }
+
+  .image-titlee {
+    color: rgb(236, 231, 231); 
+    font-size: 35px;
+  
+    font-weight: bold;
+    font-family: "Madurai W01 Ext Black";
+  font-weight: 400;
+  font-style: italic;
+  }
+  .image-titlee2 {
+    font-family: "Breul Grotesk B Light"; 
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+   
+    font-size: 30px;
+    color:#d8d7d7!important;
+  }
+  
 }
 
-
-
-/*   @media screen and(min-width:520px){
-    
-    .carousele {
-      width: 100%;
-    
-      height: 80vh;
-       display: flex; 
-     justify-content: center;
-      align-items: center;
-     
-    }
-    
-    .image-containere {
-      position: relative; 
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }  
-    
-    .carousele-image {
-      width: 100%;
-      height: 70%;
-      object-fit: cover;
-      
-      
-    }
-    
-    .text-centere {
-       position: absolute;
-      top: 50%; 
-      left: 50%; 
-      transform: translate(-50%, -50%); 
-        
-      display: flex;
-      flex-direction: column; 
-      justify-content: center;
-
-
-      
-    }
-    
-    .image-titlee {
-      color: rgb(0, 0, 0);
-      font-size: 35px;
-    
-      font-weight: bold;
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-    font-style: italic;
-    }
-    
-    
-    .image-titlee2 {
-      font-family: "Montserrat", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 400;
-      font-style: normal;
-     
-      font-size: 25px;
-      color: #f1683a; 
-    }
-    
-    .button-containere {
-      position: absolute;
-      top: 50%; 
-      transform: translateY(-50%); 
-      display: flex;
-      justify-content: space-between; 
-      width: 100%; 
-    }
-    
-    .preve, .nexte {
-     background-color: transparent !important; 
-      color: rgb(2, 2, 2);
-      border: none;
-      padding: 10px; 
-      border-radius: 50%; 
-      cursor: pointer;
-      transition: background-color 0.3s;
-      font-size: 30px;
-    }
-    
-    .preve {
-      left: 5px; 
-    }
-    
-    .nexte {
-      right: 5px; 
-    }
-    
-    .preve:hover, .nexet:hover {
-      background-color: rgba(0, 0, 0, 0.7); 
-    }
-      }
-       */

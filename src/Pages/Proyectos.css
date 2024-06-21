@@ -16,13 +16,7 @@
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
     text-align: center;
-    
-    
-   /*  display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh; */
+
 }
 
 .card{
@@ -72,16 +66,13 @@ transition: .5s;
     background: rgb(0, 0, 0,.4);
     text-align: center;
     flex-wrap: wrap; font-size: 23px;
-
-        font-family: "Pathway Gothic One", sans-serif;
+    font-family: "Madurai W01 Ext Black"; 
         font-weight: 400;
-        font-style: normal;
-    
-      
+        font-style: normal;    
 }
 
 .pro{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Breul Grotesk B Light";
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -99,7 +90,10 @@ transition: .5s;
     text-align: center;
 
 }
-
+.abs{
+    font-family: "Madurai W01 Ext Black"; 
+    font-size: 20px;
+}
 .card .back .link {
  border-top: solid 1px #fff;
  height: 50px;
@@ -111,18 +105,20 @@ transition: .5s;
     color: #070707;
     font-size: 20px;
     font-weight: bold;
+    font-family: "Madurai W01 Ext Black"; 
 }
 .card .back h3{
-    font-size: 30px;
+    font-size: 23px;
     margin-top: 20px;
     letter-spacing: 2px;
     box-shadow: 0 5px 10px #000;
-    font-family: "Pathway Gothic One", sans-serif;
+    font-family: "Madurai W01 Ext Black"; 
     font-weight: bold;
     font-style: normal;
     background-color: #fff;
     color: #000;
 }
+
 
 .card .back p{
     letter-spacing: 1px;
@@ -141,11 +137,7 @@ transition: .5s;
         text-align: center;
         
         
-       /*  display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh; */
+     
     }
 }
 @media (max-width:770px){

@@ -1,83 +1,4 @@
-/* 
 
-import Cocina1 from '../assets/Copia de COCINA-01A.jpg';
-import Cocina2 from '../assets/Copia de COCINA-02 2.jpeg';
-import Cocina3 from '../assets/Copia de COCINA-03 2.jpg';
-import Cocina4 from '../assets/Copia de COCINA-04-1.jpg';
-import Cocina5 from '../assets/COCINA-05.jpg';
-import Cocina6 from '../assets/Copia de COCINA-06.jpg';
-import Cocina7 from '../assets/Copia de COCINA-07.jpg';
-import Cocina7a from '../assets/COCINA-07A.jpg';
-import Cocina8 from '../assets/COCINA-08.jpg';
-import Baño from '../assets/Baño.webp';
-import Cocina from '../assets/COCINA-01.jpg';
-import Banner1 from '../assets/banner.webp';
-import React, { useEffect, useState, } from 'react';
-import './Cocinas.css'
-
-function Carrusel() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const images = [
-    { src: Cocina, title: 'COCINAS', second: 'INTEGRALES' },
-    { src: Cocina1},
-    { src: Cocina2},
-    { src: Cocina3},
-    { src: Cocina4},
-    { src: Cocina5},
-    { src: Cocina6},
-    { src: Cocina7},
-    { src: Cocina7a},
-    { src: Cocina8},
-   
-  ];
-
-  const prevImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
-  };
-
-  const nextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-  };
-
-  useEffect(() => {
-    const interval = setInterval(nextImage, 3000); // Cambia cada 3 segundos
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, [currentIndex]);
-
-  return (
-    <div className='pos-cocinas'>
-
-    <div className="carousele1">
-      <div className="image-containere1">
-        <img
-          src={images[currentIndex].src}
-          alt={`Slide ${currentIndex + 1}`}
-          className="carousele-image1"
-        />
-        <div className="text-centere1"> 
-          <h1 className="image-titleep1">{images[currentIndex].title}</h1>
-          {images[currentIndex].second && (
-            <h3 className="image-titleep">{images[currentIndex].second}</h3>
-          )}
-        </div>
-        <div className="button-containeret">
-          <button className="prevew" onClick={prevImage}>{'<'}</button>
-          <button className="nextew" onClick={nextImage}>{'>'}</button>
-        </div>
-      </div>
-    </div>
-    </div>
-  );
-}
-
-
-
-export default Carrusel;
- */
 
 import { Link } from 'react-router-dom';
 import React, { useRef } from 'react';
@@ -96,61 +17,265 @@ import Cocina from '../assets/COCINA-01.jpg';
 import Banner1 from '../assets/banner.webp';
 
 
-
-
-
 import './Magazine.css';
+const MagazinePage = React.forwardRef(({ images, title, link }, ref) => {
+  const isFirstCocina = images.length > 0 && images[0] === Cocina;
 
-import closet1 from '../assets/CLOSET-01.jpg';
-import closet2 from '../assets/CLOSET-02.jpg';
-import closet3 from '../assets/CLOSET-03.jpeg';
-import closet5 from '../assets/CLOSET-05.jpg';
-import closet6 from '../assets/CLOSET-06.jpg';
+  const isSecondImagecc = images.length > 0 && images[0] === Cocina; 
+  const isSecondImagec = images.length > 0 && images[0] === Cocina1; 
+  const isSecondImage4c = images.length > 0 && images[0] === Cocina2; 
+  const isSecondImage5c = images.length > 0 && images[0] === Cocina3; 
+  const isSecondImage6c = images.length > 0 && images[0] === Cocina4; 
+  const isSecondImage7c = images.length > 0 && images[0] === Cocina5; 
+  const isSecondImage8x = images.length > 0 && images[0] === Cocina6; 
+  const isSecondImage9c = images.length > 0 && images[0] === Cocina7; 
+  const isSecondImage10c = images.length > 0 && images[0] === Cocina8; 
+  const isSecondImage11c = images.length > 0 && images[0] === Cocina7a; 
 
-const MagazinePage = React.forwardRef(({ images, title, link, arrowLink }, ref) => (
-  <div className="page" ref={ref}>
-    {images.map((src, index) => (
-      <img key={index} src={src} alt={`Page ${index + 1}`} className="magazine-image" />
-    ))}
+  //responsive mobile 
+  const isSecondImagecM = images.length > 0 && images[0] === Cocina1; 
+  const isSecondImagecM1 = images.length > 0 && images[0] === Cocina2; 
+  const isSecondImage5M2 = images.length > 0 && images[0] === Cocina3; 
+  const isSecondImage6M3 = images.length > 0 && images[0] === Cocina4; 
+  const isSecondImage7M4 = images.length > 0 && images[0] === Cocina5; 
+  const isSecondImage8M5 = images.length > 0 && images[0] === Cocina6; 
+  const isSecondImage9M6 = images.length > 0 && images[0] === Cocina7; 
+  const isSecondImage10M7 = images.length > 0 && images[0] === Cocina8; 
+  const isSecondImage11M8 = images.length > 0 && images[0] === Cocina7a; 
 
-    {title && (
-      <div className="title-overlay">
-        {link ? <Link className='x' to={link}>{title}</Link> : title}
-      </div>
-    )}
+  return (
+    <div className="page" ref={ref}>
+      {images.map((src, index) => (
+        <img
+          key={index}
+          src={src}
+          alt={`Page ${index + 1}`}
+          className="magazine-image"
+        />
+      ))}
+      {title && (
+        <div className="title-overlay">
+          {link ? <Link className="x" to={link}>{title}</Link> : title}
+        </div>
+      )}
+      <div className="corner top-left" />
+      <div className="corner top-right" />
+      {isFirstCocina && (
+        <Link to="/Productos" className="arrow-link">
+          <i className="fas fa-arrow-left indicator1"></i>
+        </Link>
+      )}
+      {isFirstCocina && (
+        <Link to="/Productos" className="arrow-link">
+          <i className="fas fa-arrow-left indicator3"></i>
+        </Link>
+      )}
+        {isSecondImagecM && ( 
+        <i className="fas fa-arrow-left indicator3 " ></i>
+      )}
+        {isSecondImagecM1 && ( 
+        <i className="fas fa-arrow-left indicator3 " ></i>
+      )}
+        {isSecondImage5M2 && ( 
+        <i className="fas fa-arrow-left indicator3 " ></i>
+      )}
+        {isSecondImage6M3 && ( 
+        <i className="fas fa-arrow-left indicator3 " ></i>
+      )}
+        {isSecondImage7M4 && ( 
+        <i className="fas fa-arrow-left indicator3 " ></i>
+      )}
+        {isSecondImage8M5 && ( 
+        <i className="fas fa-arrow-left indicator3 " ></i>
+      )}
+        {isSecondImage9M6 && ( 
+        <i className="fas fa-arrow-left indicator3 " ></i>
+      )}
+        {isSecondImage10M7 && ( 
+        <i className="fas fa-arrow-left indicator3 " ></i>
+      )}
+        {isSecondImage11M8 && ( 
+        <i className="fas fa-arrow-left indicator3 " ></i>
+      )}
 
-    {arrowLink && (
-      <div className="bottom-left-arrow">
-        <Link to={arrowLink}>Productos &#9660;</Link> 
-      </div>
-    )}
- 
-    <div className="corner top-left" />
-    <div className= "corner top-right" />
-  </div>
-));
+      {isSecondImagecc && ( 
+        <i className="fas fa-arrow-right indicator2  " onClick={() => pageFlip.current.flipNext()}></i>
+      )}
+      {isSecondImagec && ( 
+        <i className="fas fa-arrow-right indicator " onClick={() => pageFlip.current.flipNext()}></i>
+      )}
+      {isSecondImagec && ( 
+        <i className="fas fa-arrow-right indicator2 " onClick={() => pageFlip.current.flipNext()}></i>
+      )}
+    
+      {isSecondImage4c && ( 
+
+        <i className="fas fa-arrow-right indicator2 " onClick={() => pageFlip.current.flipNext()}></i>
+      )}
+
+
+      {isSecondImage4c && ( 
+
+        <i className="fas fa-arrow-left  indicator1" onClick={() => pageFlip.current.flipNext()}></i>
+      )}
+      {isSecondImage5c && ( 
+
+        <i className="fas fa-arrow-right indicator" onClick={() => pageFlip.current.flipNext()}></i>
+      )}
+      {isSecondImage5c && ( 
+
+        <i className="fas fa-arrow-right indicator2" onClick={() => pageFlip.current.flipNext()}></i>
+      )}
+      {isSecondImage6c && ( 
+
+        <i className="fas fa-arrow-left indicator1" onClick={() => pageFlip.current.flipNext()}></i>
+      )}
+      {isSecondImage8x && ( 
+
+        <i className="fas fa-arrow-left indicator1 " onClick={() => pageFlip.current.flipNext()}></i>
+      )}
+      {isSecondImage8x && ( 
+
+        <i className="fas fa-arrow-right  indicator2" onClick={() => pageFlip.current.flipNext()}></i>
+      )}
+      {isSecondImage6c && ( 
+
+        <i className="fas fa-arrow-right indicator2 " onClick={() => pageFlip.current.flipNext()}></i>
+      )}
+      {isSecondImage7c && ( 
+
+        <i className="fas fa-arrow-right indicator " onClick={() => pageFlip.current.flipNext()}></i>
+      )}
+
+  
+      {isSecondImage9c && ( 
+
+        <i className="fas fa-arrow-right indicator " onClick={() => pageFlip.current.flipNext()}></i>
+      )}
+      {isSecondImage11c && ( 
+
+        <i className="fas fa-arrow-left indicator1" onClick={() => pageFlip.current.flipNext()}></i>
+      )}
+      {isSecondImage11c && ( 
+
+        <i className="fas fa-arrow-right indicator2" onClick={() => pageFlip.current.flipNext()}></i>
+      )}
+      {isSecondImage10c && ( 
+
+        <i className="fas fa-arrow-left indicator3 " onClick={() => pageFlip.current.flipNext()}></i>
+      )}
+
+    </div>
+  );
+});
 
 const Cocinas = () => {
   const pageFlip = useRef(null);
 
+  const handleNext = () => {
+    if (pageFlip.current) {
+      pageFlip.current.flipNext();
+    }
+  };
+
+  const handlePrev = () => {
+    if (pageFlip.current) {
+      pageFlip.current.flipPrev();
+    }
+  };
+  
+
   return (
-    <div className="magazine-container">
-      <PageFlip ref={pageFlip} width={600} height={700}>
-        <MagazinePage images={[Cocina]} title="Cocinas" link="/cocinas" arrowLink="/productos" />
-        <MagazinePage images={[Cocina1]} />
-        <MagazinePage images={[Cocina2]} />
-        <MagazinePage images={[Cocina3]} />
-        <MagazinePage images={[Cocina4]} />
-        <MagazinePage images={[Cocina5]} />
-        <MagazinePage images={[Cocina6]} />
-        <MagazinePage images={[Cocina7]} />
-        <MagazinePage images={[Cocina7a]} />
-        <MagazinePage images={[Cocina8]} />
-      </PageFlip>
+    <div>
+
+      <div className="magazine-container">
+        <PageFlip ref={pageFlip} width={700} height={700} className='PageFlip' >
+          <MagazinePage images={[Cocina]} title="Cocinas" link="/cocinas" arrowLink="/productos" />
+          <MagazinePage images={[Cocina1]} />
+          <MagazinePage images={[Cocina2]} />
+          <MagazinePage images={[Cocina3]} />
+          <MagazinePage images={[Cocina4]} />
+          <MagazinePage images={[Cocina5]} />
+          <MagazinePage images={[Cocina6]} />
+          <MagazinePage images={[Cocina7]} />
+          <MagazinePage images={[Cocina7a]} />
+          <MagazinePage images={[Cocina8]} />
+        </PageFlip>
+      </div>
+
+      <div className="magazine-container1">
+        <PageFlip ref={pageFlip} width={450} height={450} >
+          <MagazinePage images={[Cocina]} title="Cocinas" link="/cocinas" arrowLink="/productos" />
+          <MagazinePage images={[Cocina1]} />
+          <MagazinePage images={[Cocina2]} />
+          <MagazinePage images={[Cocina3]} />
+          <MagazinePage images={[Cocina4]} />
+          <MagazinePage images={[Cocina5]} />
+          <MagazinePage images={[Cocina7]} />
+          <MagazinePage images={[Cocina7a]} />
+          <MagazinePage images={[Cocina8]} />
+          <MagazinePage images={[Cocina6]} />
+        </PageFlip>
+      </div>
+      <div className="magazine-container2">
+        <PageFlip ref={pageFlip} width={700} height={600} >
+          <MagazinePage images={[Cocina]} title="Cocinas" link="/cocinas" arrowLink="/productos" />
+          <MagazinePage images={[Cocina1]} />
+          <MagazinePage images={[Cocina2]} />
+          <MagazinePage images={[Cocina3]} />
+          <MagazinePage images={[Cocina4]} />
+          <MagazinePage images={[Cocina5]} />
+          <MagazinePage images={[Cocina6]} />
+          <MagazinePage images={[Cocina7]} />
+          <MagazinePage images={[Cocina7a]} />
+          <MagazinePage images={[Cocina8]} />
+        </PageFlip>
+      </div>
+      <div className="magazine-container3">
+        <PageFlip ref={pageFlip} width={900} height={600} >
+          <MagazinePage images={[Cocina]} title="Cocinas" link="/cocinas" arrowLink="/productos" />
+          <MagazinePage images={[Cocina1]} />
+          <MagazinePage images={[Cocina2]} />
+          <MagazinePage images={[Cocina3]} />
+          <MagazinePage images={[Cocina4]} />
+          <MagazinePage images={[Cocina5]} />
+          <MagazinePage images={[Cocina6]} />
+          <MagazinePage images={[Cocina7]} />
+          <MagazinePage images={[Cocina7a]} />
+          <MagazinePage images={[Cocina8]} />
+        </PageFlip>
+      </div>
+      <div className="magazine-container4">
+        <PageFlip ref={pageFlip} width={550} height={600} >
+          <MagazinePage images={[Cocina]} title="Cocinas" link="/cocinas" arrowLink="/productos" />
+          <MagazinePage images={[Cocina1]} />
+          <MagazinePage images={[Cocina2]} />
+          <MagazinePage images={[Cocina3]} />
+          <MagazinePage images={[Cocina4]} />
+          <MagazinePage images={[Cocina5]} />
+          <MagazinePage images={[Cocina6]} />
+          <MagazinePage images={[Cocina7]} />
+          <MagazinePage images={[Cocina7a]} />
+          <MagazinePage images={[Cocina8]} />
+        </PageFlip>
+      </div>
+      <div className="magazine-container5">
+        <PageFlip ref={pageFlip} width={350} height={500} >
+          <MagazinePage images={[Cocina]} title="Cocinas" link="/cocinas" arrowLink="/productos" />
+          <MagazinePage images={[Cocina1]} />
+          <MagazinePage images={[Cocina2]} />
+          <MagazinePage images={[Cocina3]} />
+          <MagazinePage images={[Cocina4]} />
+          <MagazinePage images={[Cocina5]} />
+          <MagazinePage images={[Cocina6]} />
+          <MagazinePage images={[Cocina7]} />
+          <MagazinePage images={[Cocina7a]} />
+          <MagazinePage images={[Cocina8]} />
+        </PageFlip>
+      </div>
     </div>
   );
 };
 
-export default Cocinas;
- 
 
+export default Cocinas; 

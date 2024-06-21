@@ -49,7 +49,7 @@ export default function Header() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
     <Container >
-      {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
+
       <img className='logo' src={logo} alt='logo' /> 
       <Navbar.Toggle  aria-controls="basic-navbar-nav " className='basic-navbar-nav1' />
       <Navbar.Collapse id="basic-navbar-nav" className='po'>
@@ -61,22 +61,6 @@ export default function Header() {
       </Navbar.Collapse>
     </Container>
   </Navbar>
-/*     <div className='img'>
-          </div> */
 
-
-          
-        /*   <header>
-
-      <nav className='navBar'>
-        <div className='links'>
-        <img className='logo' src={logo} alt='logo' /> 
-          {links.map(menu => (
-            <Link to={menu.href} className='linkUnidad'>{menu.name.toUpperCase()}</Link>
-          ))}
-        </div>
-     
-      </nav>
-          </header> */
   )
 } 
